@@ -1,7 +1,11 @@
 #include <stdio.h>
 #include "Utils.h"
 
+#define PORT "9340"
+#define MAXDATASIZE 100
+
 int main() {
-    printf("Hello, World!\n");
+
+
     return 0;
 }
