@@ -6,10 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/domantas/CN/Client/Utils.c
-Utils.h
-/home/domantas/CN/Client/Utils.h
-
 /home/domantas/CN/Client/Utils.h
 stdio.h
 -
