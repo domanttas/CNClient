@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/domantas/CN/Client/Utils.c
+Utils.h
+/home/domantas/CN/Client/Utils.h
+
+/home/domantas/CN/Client/Utils.h
+stdio.h
+-
+stdlib.h
+-
+unistd.h
+-
+errno.h
+-
+string.h
+-
+netdb.h
+-
+sys/types.h
+-
+netinet/in.h
+-
+sys/socket.h
+-
+arpa/inet.h
+-
+
+/home/domantas/CN/Client/main.c
+stdio.h
+-
+Utils.h
+/home/domantas/CN/Client/Utils.h
+
