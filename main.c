@@ -71,7 +71,16 @@ int main() {
     memset(&buffer, 0, sizeof buffer);
 
     printf("Connected to %s\n", s);
-    printf("Enter your message:\n");
+
+    printf("\n");
+
+    printf("Welcome to calculator!\n");
+    printf("Right now calculator works only with integers, please note that :(\n");
+    printf("Just shoot your calculation and it will be done!\n");
+
+    printf("\n");
+
+    printf("Enter your calculation:\n");
 
     //Loop for keeping connection with the server
     for(;;) {
@@ -84,9 +93,11 @@ int main() {
         if (FD_ISSET(sockfd, &read_fds)) {
             memset(&buffer, 0, MAXDATASIZE);
             read(sockfd, buffer, MAXDATASIZE);
-            printf("Your received: ");
+
+            printf("Your answer: ");
             printf("%s\n", buffer);
-            printf("Enter your message:\n");
+            printf("Enter your calculation:\n");
+
         } else if (FD_ISSET(0, &read_fds)) {
             if ((messageLength = read(0, &sendBuffer, MAXDATASIZE - 1)) == -1) {
                 printf("Error while reading input!\n");
